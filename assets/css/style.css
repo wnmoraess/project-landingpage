@@ -1,0 +1,171 @@
+:root {
+  --bg-color1: #262b55;
+  --bg-color2: #3f3e76;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  width: 990px;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: var(--bg-color1);
+  align-items: center;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img{
+  width: 180px;
+}
+
+nav ul {
+  display: flex;
+}
+
+li {
+  padding: 10px;
+  margin-right: 20px;
+  border: 3px solid var(--bg-color2);
+  border-radius: 20px;
+  transition: all ease 0.2s;
+}
+
+li:hover {
+ background-color: var(--bg-color2);
+}
+
+nav ul li {
+  color: white;
+}
+
+nav ul img {
+  width: 45px;
+}
+
+#fist {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color2);
+  height: 570px;
+}
+
+.image_text {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inicio_text h1{
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+}
+
+#nome {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+.image img {
+  width: 400px;
+}
+
+/* sobre */
+
+#second {
+  display: flex;
+  justify-content: center;
+}
+
+.sobre {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 110px;
+}
+
+.texto {
+  width: 550px;
+}
+
+.texto h1 {
+  margin-bottom: 60px;
+  color: black;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.texto p {
+  font-size: 21px;
+}
+
+/* tree */
+
+.tree {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color2);
+}
+
+.sobre_certificados {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.certificados h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/* imagens */
+
+.items_wrapper {
+  width: 60vw;
+}
+
+.certificado_imagens {
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.imagens_cerf {
+  width: 100%;
+  flex: none;
+  scroll-snap-align: start;
+  background-color: white;
+}
+
+.imagens_cerf img {
+  width: 100%;
+}
+
+.imagens_cerf p {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
